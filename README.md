@@ -24,4 +24,8 @@ Because this is a multi-label classification problem, we use binary cross-entrop
 
 IMPORTANT: At the time of writing this description, Huggingface's pipeline did not support multi-label classifiers.
 
-
+### Citation
+Please cite the following reference if you use this model:
+```
+Ringel, Daniel, Creating Synthetic Experts with Generative Artificial Intelligence (July 15, 2023). Available at SSRN: https://ssrn.com/abstract=4542949
+```
