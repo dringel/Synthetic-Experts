@@ -6,7 +6,7 @@ Approximate Generative AI with fine-tuned LLM for complex Classification Tasks
 
 ### Additional Ressources
 - [www.synthetic-experts.ai](http://www.synthetic-experts.ai)  
-- This repo also includes a notebook that demonstrates how to label text with OpenAI's GPT4 via API (SyntheticExperts-Labels-from-Generative-AI.ipynb)
+- This repo also includes a notebook that demonstrates how to label text with OpenAI's GPT4 via API ([Labels-from-Generative-AI](https://github.com/dringel/Synthetic-Experts/blob/main/SyntheticExperts-Labels-from-Generative-AI.ipynb))
 
 ### Application: Identifying Marketing Mix Variabels (4P of Marketing) in Tweets
 [HuggingFace Classifier](https://huggingface.co/dmr76/mmx_classifier_microblog_ENv02)
