@@ -37,8 +37,10 @@ def clean_tweet(tweet):
        (2) removing line breaks and leading periods and colons,
        (3) removing leading, trailing and duplicate spaces.
     '''
-    tweet = re.sub(r"https?://\S+|www\.\S+", " URL ", tweet) 
-    tweet = parse_tweet(tweet)
+    if tweet is not None and isinstance(tweet, str):
+        tweet = re.sub(r"https?://\S+|www\.\S+", " URL ", tweet) 
+    if tweet is not None:
+        tweet = parse_tweet(tweet)
     if tweet is not None:
         tweet = re.sub(r"(?<=\S)\\n(?=\S)|(?<=\S)\n(?=\S)|\\n|\n|\\n+|\n+|\\n{2,}|\n{2,}", " ", tweet)
         tweet = re.sub(r'^[.:]+', '', tweet)
@@ -47,6 +49,9 @@ def clean_tweet(tweet):
 
 def remove_joiners_commas_spaces(text):
     '''remove repeated commas and excessive spaces, and joiners'''
+    if text is None or not isinstance(text, str):
+        print(f"Warning: text is either None or not a string, it's a {type(text)}")
+        return None
     # Remove multiple commas
     text = re.sub(r',+', ', ', text)
     text = re.sub(r'(\s*,\s*)+', ', ', text)
