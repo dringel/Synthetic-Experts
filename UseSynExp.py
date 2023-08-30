@@ -1,7 +1,7 @@
 '''
 Helper Functions for using a Synthetic Expert on Twitter Data
 
-Version 0.5  
+Version 0.6  
 Date: August 30, 2023    
 Author: Daniel M. Ringel    
 Contact: dmr@unc.edu
@@ -122,14 +122,14 @@ def apply_vader_sentiment(df, t):
     # Get conditional polarity scores
     for label in ['Product', 'Place', 'Price', 'Promotion']:
         df[f'Sent_{label}'] = df.apply(
-            lambda row: analyzer.polarity_scores(row['text'])['compound'] if row[label] == 1 else 'n.a.', 
+            lambda row: analyzer.polarity_scores(row['text'])['compound'] if row[label] == 1 else None, 
             axis=1
         )
 
     # Get column name with maximum probability
     prob_cols = ['Prob_Product', 'Prob_Place', 'Prob_Price', 'Prob_Promotion']
     df['Sent_Max'] = df[prob_cols].idxmax(axis=1).str.replace('Prob_', '')
-    df['Sent_Max'] = df.apply(lambda row: row['Sent_Max'] if row[row['Sent_Max']] >= t else 'n.a.', axis=1)
+    df['Sent_Max'] = df.apply(lambda row: row['Sent_Max'] if row[row['Sent_Max']] >= t else None, axis=1)
 
     return df
 
