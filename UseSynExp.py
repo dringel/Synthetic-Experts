@@ -1,8 +1,8 @@
 '''
 Helper Functions for using a Synthetic Expert on Twitter Data
 
-Version 0.4  
-Date: August 16, 2023    
+Version 0.5  
+Date: August 30, 2023    
 Author: Daniel M. Ringel    
 Contact: dmr@unc.edu
 
@@ -45,6 +45,17 @@ def clean_tweet(tweet):
         tweet = re.sub(r" +", " ", tweet.strip())
     return tweet
 
+def remove_joiners_commas_spaces(text):
+    '''remove repeated commas and excessive spaces, and joiners'''
+    # Remove multiple commas
+    text = re.sub(r',+', ', ', text)
+    text = re.sub(r'(\s*,\s*)+', ', text)
+    # Remove specific Unicode characters including '⠀' (U+2800)
+    text = re.sub(r'[\u200D\u200B\u2060\u00A0\u202F\uFEFF\u3000\u2800]', ' ', text)
+    # Remove double spaces
+    text = re.sub(r' +', ' ', text)
+    return text.strip()
+
 def predict_batch(texts, model, tokenizer, device, batch_sze=8):
     '''break texts into batches and predict'''
     all_probs = []
@@ -66,7 +77,7 @@ def block_process(df, batch_size, model, tokenizer, device, t, id2label):
     while batch_start < len(df):
         df_batch = df.iloc[batch_start:batch_end].copy()
         
-        # Preprocess Tweets 
+        # Preprocess Texts 
         df_batch.loc[:, "text"] = df_batch["text"].apply(clean_tweet)
         df_batch = df_batch.dropna(subset=["text"])
         
@@ -91,12 +102,12 @@ def block_process(df, batch_size, model, tokenizer, device, t, id2label):
 
         batch_start += batch_size
         batch_end += batch_size
-        print(f'{datetime.now().strftime("%H:%M:%S")} --> Finished labeling {batch_start} Tweets')
+        print(f'{datetime.now().strftime("%H:%M:%S")} --> Finished labeling {batch_start} Texts')
 
     return df_out
 
 def apply_vader_sentiment(df, t):
-    '''Get compound sentiment (i.e., polarity) for each Tweet'''
+    '''Get compound sentiment (i.e., polarity) for each Text'''
     # Initialize Sentiment Analyzer
     analyzer = SentimentIntensityAnalyzer()
 
