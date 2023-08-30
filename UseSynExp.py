@@ -49,7 +49,7 @@ def remove_joiners_commas_spaces(text):
     '''remove repeated commas and excessive spaces, and joiners'''
     # Remove multiple commas
     text = re.sub(r',+', ', ', text)
-    text = re.sub(r'(\s*,\s*)+', ', text)
+    text = re.sub(r'(\s*,\s*)+', ', ', text)
     # Remove specific Unicode characters including '⠀' (U+2800)
     text = re.sub(r'[\u200D\u200B\u2060\u00A0\u202F\uFEFF\u3000\u2800]', ' ', text)
     # Remove double spaces
