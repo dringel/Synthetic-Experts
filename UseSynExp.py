@@ -1,8 +1,8 @@
 '''
 Helper Functions for using a Synthetic Expert on Twitter Data
 
-Version 0.6  
-Date: August 30, 2023    
+Version 0.7  
+Date: September 6, 2023    
 Author: Daniel M. Ringel    
 Contact: dmr@unc.edu
 
@@ -107,7 +107,7 @@ def block_process(df, batch_size, model, tokenizer, device, t, id2label):
 
         batch_start += batch_size
         batch_end += batch_size
-        print(f'{datetime.now().strftime("%H:%M:%S")} --> Finished labeling {batch_start} Texts')
+        print(f'{datetime.now().strftime("%H:%M:%S")} --> Finished labeling up to {batch_start} Texts')
 
     return df_out
 
