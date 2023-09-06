@@ -25,6 +25,13 @@ Because this is a multi-label classification problem, we use binary cross-entrop
 
 IMPORTANT: At the time of writing this description, Huggingface's pipeline did not support multi-label classifiers.
 
+### Demo Datasets
+Demo datasets are available in the `Data` folder. The texts in these datasets are based on real Tweets that were rewritten by an AI. I call these data ***Synthetic Twins***.
+
+>***Synthetic Twins*** correspond semantically in idea and meaning to original texts. However, wording, people, places, firms, brands, and products were changed by an AI. As such, ***Synthetic Twins*** mitigate, to some extent, possible privacy, and copyright concerns. If you'd like to learn more about ***Synthetic Twins***, another generative AI project by Daniel Ringel, then please get in touch! dmr@unc.edu  
+
+You can ***create your own Synthetic Twins of texts*** with this Python notebook: `SyntheticExperts_Create_Synthetic_Twins_of_Texts.ipynb`, available as BETA version (still being tested) in this repo.
+
 ### Citation
 Please cite the following reference if you use this model:
 ```
