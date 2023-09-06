@@ -23,7 +23,7 @@ It was trained on 15K Tweets that mentioned at least one of 699 brands. The Twee
 
 Because this is a multi-label classification problem, we use binary cross-entropy (BCE) with logits loss for the fine-tuning. We basically combine a sigmoid layer with BCELoss in a single class. To obtain the probabilities for each label (i.e., marketing mix variable), you need to "push" the predictions through a sigmoid function. This is already done in the accompanying python notebook.
 
-IMPORTANT: At the time of writing this description, Huggingface's pipeline did not support multi-label classifiers.
+**IMPORTANT:** At the time of writing this description, Huggingface's pipeline did not support multi-label classifiers.
 
 ### Demo Datasets
 Demo datasets are available in the `Data` folder. The texts in these datasets are based on real Tweets that were rewritten by an AI. I call these data ***Synthetic Twins***.
