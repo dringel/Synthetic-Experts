@@ -24,6 +24,9 @@ Because this is a multi-label classification problem, we use binary cross-entrop
 
 **IMPORTANT:** At the time of writing this description, Huggingface's pipeline did not support multi-label classifiers.
 
+### Quickstart
+Check out this [Python Notebook](https://github.com/dringel/Synthetic-Experts/blob/main/SyntheticExperts_Quickstart_MMXClassifier.ipynb) to try out a MMX Synthetic Expert
+
 ### Demo Datasets
 Demo datasets are available in the `Data` folder. The texts in these datasets are based on real Tweets that were rewritten by an AI. I call these data ***Synthetic Twins***.
 
