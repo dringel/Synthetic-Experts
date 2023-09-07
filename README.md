@@ -1,13 +1,20 @@
 # Synthetic-Experts
 Approximate Generative AI with fine-tuned LLM for complex Classification Tasks
 
-### Download the working paper from SSRN
+## Download the working paper from SSRN
 ["Creating Synthetic Experts with Generative AI"](https://papers.ssrn.com/abstract_id=4542949)
 
-### Additional Ressources
+## Additional Ressources
 - [www.synthetic-experts.ai](http://www.synthetic-experts.ai)  
 
-### Application: Identifying Marketing Mix Variabels (4P of Marketing) in Tweets
+## Notebooks in this Repo
+<b><i>Using</b> the MMX Synthetic Expert</i>
+
+<b><i>CreatingUsing</b> a Synthetic Expert</i>
+
+<b><i>Anonomyzing</b> texts with Synthetic Twins</i>
+
+## Application: Identifying Marketing Mix Variabels (4P of Marketing) in Tweets
 [MMX Classifier](https://huggingface.co/dmr76/mmx_classifier_microblog_ENv02)
 
 You can use this classifier to determine which of the 4P's of marketing, also known as marketing mix variables, a microblog post (e.g., Tweet) pertains to:
@@ -24,17 +31,17 @@ Because this is a multi-label classification problem, we use binary cross-entrop
 
 **IMPORTANT:** At the time of writing this description, Huggingface's pipeline did not support multi-label classifiers.
 
-### Quickstart
+## Quickstart
 Check out this [Python Notebook](https://github.com/dringel/Synthetic-Experts/blob/main/SyntheticExperts_Quickstart_MMXClassifier.ipynb) to try out a MMX Synthetic Expert
 
-### Demo Datasets
+## Demo Datasets
 Demo datasets are available in the `Data` folder. The texts in these datasets are based on real Tweets that were rewritten by an AI. I call these data ***Synthetic Twins***.
 
 >***Synthetic Twins*** correspond semantically in idea and meaning to original texts. However, wording, people, places, firms, brands, and products were changed by an AI. As such, ***Synthetic Twins*** mitigate, to some extent, possible privacy, and copyright concerns. If you'd like to learn more about ***Synthetic Twins***, another generative AI project by Daniel Ringel, then please get in touch! dmr@unc.edu  
 
 You can ***create your own Synthetic Twins of texts*** with this Python notebook: `SyntheticExperts_Create_Synthetic_Twins_of_Texts.ipynb`, available as BETA version (still being tested) in this repo.
 
-### Citation
+## Citation
 Please cite the following reference if you use this model:
 ```
 Ringel, Daniel, Creating Synthetic Experts with Generative Artificial Intelligence (July 15, 2023). Available at SSRN: https://ssrn.com/abstract=4542949
