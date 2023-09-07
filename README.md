@@ -10,7 +10,14 @@ Approximate Generative AI with fine-tuned LLM for complex Classification Tasks
 ## Notebooks in this Repo
 <b><i>Using</b> the MMX Synthetic Expert</i>
 
-<b><i>CreatingUsing</b> a Synthetic Expert</i>
+- Quickly identify which marketing mix (MMX) variable a text pertains to, if any: `SyntheticExperts_Quickstart_MMXClassifier.ipynb
+- Batch processing for rapidly identifying MMX variables at scale: `SyntheticExperts_Predict_Texts_with_MMXClassifier.ipynb`
+- Reveal differences in consumer sentiment across brands' MMX from texts, and discover MMX specific topics: `SyntheticExperts_MMX_Sentiment_x_Topics.ipynb`
+
+<b><i>Creating</b> a Synthetic Experts</i>
+
+- 
+
 
 <b><i>Anonomyzing</b> texts with Synthetic Twins</i>
 
