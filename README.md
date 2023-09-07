@@ -1,5 +1,5 @@
 # Synthetic-Experts
-Approximate Generative AI with fine-tuned LLM for complex Classification Tasks
+<b><i>Approximate Generative AI with fine-tuned LLM for complex Classification Tasks</b></i>
 
 ### Download the working paper from SSRN
 ["Creating Synthetic Experts with Generative AI"](https://papers.ssrn.com/abstract_id=4542949)
