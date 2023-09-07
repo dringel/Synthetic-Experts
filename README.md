@@ -1,10 +1,10 @@
 # Synthetic-Experts
 Approximate Generative AI with fine-tuned LLM for complex Classification Tasks
 
-## Download the working paper from SSRN
+### Download the working paper from SSRN
 ["Creating Synthetic Experts with Generative AI"](https://papers.ssrn.com/abstract_id=4542949)
 
-## Additional Ressources
+### Additional Ressources
 - [www.synthetic-experts.ai](http://www.synthetic-experts.ai)  
 
 ## Notebooks in this Repo
@@ -31,10 +31,10 @@ Because this is a multi-label classification problem, we use binary cross-entrop
 
 **IMPORTANT:** At the time of writing this description, Huggingface's pipeline did not support multi-label classifiers.
 
-## Quickstart
+### Quickstart
 Check out this [Python Notebook](https://github.com/dringel/Synthetic-Experts/blob/main/SyntheticExperts_Quickstart_MMXClassifier.ipynb) to try out a MMX Synthetic Expert
 
-## Demo Datasets
+### Demo Datasets
 Demo datasets are available in the `Data` folder. The texts in these datasets are based on real Tweets that were rewritten by an AI. I call these data ***Synthetic Twins***.
 
 >***Synthetic Twins*** correspond semantically in idea and meaning to original texts. However, wording, people, places, firms, brands, and products were changed by an AI. As such, ***Synthetic Twins*** mitigate, to some extent, possible privacy, and copyright concerns. If you'd like to learn more about ***Synthetic Twins***, another generative AI project by Daniel Ringel, then please get in touch! dmr@unc.edu  
