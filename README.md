@@ -14,14 +14,18 @@ Approximate Generative AI with fine-tuned LLM for complex Classification Tasks
 - Batch processing for rapidly identifying MMX variables at scale: `SyntheticExperts_Predict_Texts_with_MMXClassifier.ipynb`
 - Reveal differences in consumer sentiment across brands' MMX from texts, and discover MMX-specific topics: `SyntheticExperts_MMX_Sentiment_x_Topics.ipynb`
 
-<b><i>Creating</b> a Synthetic Experts</i>
+<b><i>Creating</b> a Synthetic Expert</i>
 
 - Label texts using generative AI by example of GPT4 via OpenAI's API: `SyntheticExperts-Labels-from-Generative-AI.ipynb`
-- Approximate a geneartive AI for a specific task by fine-tuning a foundational large language model: `SyntheticExperts_Train_MMX_Classifier.ipynb`
+- Approximate a powerful generative AI for a specific task by fine-tuning a foundational large language model: `SyntheticExperts_Train_MMX_Classifier.ipynb`
 
 <b><i>Anonomyzing</b> texts with Synthetic Twins</i>
 
--
+- Create replicas of texts that capture their idea and meaning but obfuscate identifying information with generative AI: `SyntheticExperts_Create_Synthetic_Twins_of_Texts.ipynb`
+
+<b><i>GPU setup</b> on Apple M1 and M2 systems</i>
+
+- Get your Apple notebook ready to create Synthetic Experts and rapidly identify constructs of interest in vast amounts of text: `Setup-MacBook-M2-Pytorch-TensorFlow-Apr2023.ipynb`
 
 ## Application: Identifying Marketing Mix Variabels (4P of Marketing) in Tweets
 [MMX Classifier](https://huggingface.co/dmr76/mmx_classifier_microblog_ENv02)
