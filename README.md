@@ -19,7 +19,7 @@
 - Label texts using generative AI by example of GPT4 via OpenAI's API: `SyntheticExperts-Labels-from-Generative-AI.ipynb`
 - Approximate a powerful generative AI for a specific task by fine-tuning a foundational large language model: `SyntheticExperts_Train_MMX_Classifier.ipynb`
 
-<b><i>Anonomyzing</b> texts with Synthetic Twins</i>
+<b><i>Anonymizing</b> texts with Synthetic Twins</i>
 
 - Create replicas of texts that capture their idea and meaning but obfuscate identifying information with generative AI: `SyntheticExperts_Create_Synthetic_Twins_of_Texts.ipynb`
 
