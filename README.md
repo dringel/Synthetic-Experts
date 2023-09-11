@@ -55,7 +55,7 @@ Demo datasets are available in the `Data` folder. The texts in these datasets ar
 You can ***create your own Synthetic Twins of texts*** with this Python notebook: `SyntheticExperts_Create_Synthetic_Twins_of_Texts.ipynb`, available as BETA version (still being tested) in this repo.
 
 ## Citation
-Please cite the following reference if you use this model:
+Please cite the following reference if you use Synthetic Experts and/or Synthetic Twins in your own research or projects:
 ```
 Ringel, Daniel, Creating Synthetic Experts with Generative Artificial Intelligence (July 15, 2023). Available at SSRN: https://ssrn.com/abstract=4542949
 ```
