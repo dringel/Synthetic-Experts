@@ -2,7 +2,7 @@
 <b><i>Approximate Generative AI with fine-tuned LLM for complex Classification Tasks</b></i>
 
 ### Download the working paper from SSRN
-["Creating Synthetic Experts with Generative Artificial Intelligence"](https://papers.ssrn.com/abstract_id=4542949)
+[<i>Creating Synthetic Experts with Generative Artificial Intelligence</i>](https://papers.ssrn.com/abstract_id=4542949)
 
 ### Additional Ressources
 - [www.synthetic-experts.ai](http://www.synthetic-experts.ai)  
