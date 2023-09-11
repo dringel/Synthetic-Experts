@@ -4,8 +4,8 @@
 ### Download the working paper from SSRN
 [<i>Creating Synthetic Experts with Generative Artificial Intelligence</i>](https://papers.ssrn.com/abstract_id=4542949)
 
-### Additional Ressources
-- [www.synthetic-experts.ai](http://www.synthetic-experts.ai)  
+### Project Website
+[www.synthetic-experts.ai](http://www.synthetic-experts.ai)  
 
 ## Notebooks in this Repo
 <b><i>Using</b> the MMX Synthetic Expert</i>
